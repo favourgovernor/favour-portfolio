@@ -1,0 +1,164 @@
+.pricing-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.pricing-header{
+    position: relative;
+}
+.pricing-header h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.pricing-header img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+/* Pricing.css */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns for desktop */
+    gap: 20px; /* Space between the packages */
+    padding: 20px;
+    background-color: #161513; /* Background color */
+}
+
+.package {
+   
+    background-color: #ffffff; /* White card background */
+    border-radius: 8px;
+    box-shadow: 1 4px 8px linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.54%); /* Slightly stronger shadow */
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border: 1px solid linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.54%); /* Very light gray border */
+    position: relative;
+     /*flex: 1 1 calc(33.33% - 20px);*/
+    /*flex: 1 0 300px;*/
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions */
+}
+
+.package:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+.popular {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.package-header {
+    margin-bottom: 20px;
+    color: #161513; /* Blue header color */
+}
+
+.diamond-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffc107; /* Gold/Amber icon color */
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #C64598; /* Green price color */
+}
+
+.price span {
+    font-size: 2em;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.features li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #343a40; /* Dark gray text color */
+}
+
+.features span {
+    margin-right: 10px;
+    color: #C64598; /* Green checkmark color */
+    font-weight: bold;
+}
+
+.get-started-button {
+    background-color: #161513;
+    color: #C64598;
+    padding: 12px 24px; /* Slightly larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 500; /* Slightly bolder font */
+}
+
+.get-started-button:hover {
+    background-color: #C64598;
+    color: #161513;
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 0.85em;
+    color: #6c757d; /* Slightly lighter gray for contact info */
+}
+
+.popular-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffc107;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+    .pricing-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+    .package {
+        grid-template-columns: 2fr; /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+    .package {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
+@media (max-width: 576px) {
+    .pricing-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+    .package{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}

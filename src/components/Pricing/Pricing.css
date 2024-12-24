@@ -1,0 +1,77 @@
+/* BronzePackage.css */
+.bronze-package-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.bronze-package {
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  text-align: center; /* Center text */
+  width: 300px; /* Adjust width as needed */
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+.package-header {
+  margin-bottom: 20px;
+  color: teal; /* Example color */
+}
+
+/*.diamond-icon {
+  font-size: 2em; /* Adjust size as needed */
+ /* margin-bottom: 10px;
+}*/
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 2em;
+  color: #007bff; /* Example color */
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.features li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features span {
+  margin-right: 10px;
+  color: green; /* Checkmark color */
+  font-weight: bold;
+}
+
+.get-started-button {
+  background-color: teal; /* Example button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.get-started-button span{
+    margin-left: 10px;
+}

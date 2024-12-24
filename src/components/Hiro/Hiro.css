@@ -1,0 +1,86 @@
+.hiro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.hiro img {
+    margin-top: 150px;
+}
+.hiro h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+   /* font-family: 'outfit';*/
+}
+.hiro h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hiro p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.hiro-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hiro-connect{
+    padding:25px 45px;
+    border-radius: 50px;
+    background:linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+}
+.hiro-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor:pointer
+}
+.hiro-connect:hover{
+    border: 2px solid white;
+}
+.hiro-resume:hover{
+    border-color: #B415FF;
+}
+@media(max-width:768px){
+    .hiro img{
+        margin-top: 120px;
+        width: 100%;
+    }
+    .hiro h1{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .hiro p{
+        width: 80%;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 10px 0px;
+    }
+    .hiro-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hiro-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .hiro-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+}
